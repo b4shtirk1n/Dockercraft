@@ -1,2 +1,3 @@
-compose.yaml
+/server
+*.yaml
 .DS_store
