@@ -1,6 +1,4 @@
-<p align="center">
-  <image src="./dockercraft-web/src/assets/docker-mark-blue.svg"/>
-</p>
+![](/dockercraft-web/src/assets/docker-mark-blue.svg)
 
 # Dockercraft
 
