@@ -1,5 +1,5 @@
 <p align="left" width="100%">
-    <img width="33%" src="./dockercraft-web/src/assets/docker-mark-blue.svg">
+    <img width="33%" src="./dockercraft-web/src/assets/logo.svg">
 </p>
 
 # Dockercraft
