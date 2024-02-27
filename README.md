@@ -1,19 +1,37 @@
-# Forge minecraft server
+<p align="center">
+  <image src="./dockercraft-web/src/assets/docker-mark-blue.svg"/>
+</p>
 
-Docker image for running minecraft forge server
+# Dockercraft
+
+Docker image for minecraft server
+
+## Featured
+
+✖️ Vanilla  
+✔️ Forge  
+✖️ Mohist  
+✖️ Bedrock  
+✖️ Environment for server properties
 
 ## Environments
-``` 
+
+```
 MC_VER=minecraft version(default - 1.18.2)
 FORGE_VER=forge version(default - 40.2.0)
 ```
+
 ## Example
+
 CLI
-``` sh
+
+```sh
 docker run -d -p 25565:25565
 ```
+
 Compose
-``` yaml
+
+```yaml
 version: "3.8"
 services:
   server:
