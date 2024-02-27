@@ -4,4 +4,42 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+}
+
+section {
+  display: flex;
+  align-items: center;
+  height: 100vh;
+  background-color: $color-bg;
+  color: $color-text;
+}
+
+a {
+  text-decoration: none;
+  color: $color-text;
+}
+
+.intro-container {
+  width: auto;
+  padding: 0 40px;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+
+.title {
+  font-size: 112px;
+}
+
+.description {
+  font-size: 48px;
+}
+
+.logo {
+  position: absolute;
+  top: 50%;
+  left: 98%;
+  width: 50%;
+  transform: translate(-50%, -50%);
 }

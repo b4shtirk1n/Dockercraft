@@ -1,12 +1,18 @@
+import logo from "../assets/logo.svg"
 import Header from "../components/Header";
-import "./App.css";
+import "../styles/App.scss";
 
 export default function App() {
   return (
-    <section>
-      <Header/>
-      <h1>Dockercraft</h1>
-      <p>Docker image for minecraft </p>
-    </section>
+    <>
+      <Header />
+      <section>
+        <div className="intro-container">
+          <h1 className="title">Dockercraft</h1>
+          <p className="description">Docker image for minecraft </p>
+        </div>
+        <img className="logo" src={logo}/>
+      </section>
+    </>
   );
 }
