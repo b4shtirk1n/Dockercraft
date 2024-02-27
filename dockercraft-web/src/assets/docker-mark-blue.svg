@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 1751 614.12">
+  <defs>
+    <style>
+      .cls-1, .cls-2, .cls-3 {
+        stroke-width: 0px;
+      }
+
+      .cls-1 {
+        fill: #1d63ed;
+      }
+
+      .cls-2 {
+        fill: #fff;
+      }
+
+      .cls-3 {
+        fill: #00084d;
+      }
+    </style>
+  </defs>
+  <path class="cls-1" d="M1105.71,288.09h81.7v-81.7h-81.7v81.7ZM1211.26,288.09h81.7v-81.7h-81.7v81.7ZM1316.81,288.09h81.7v-81.7h-81.7v81.7ZM1422.36,206.39v81.7h81.7v-81.7h-81.7ZM1000.16,288.09h81.7v-81.7h-81.7v81.7ZM1105.71,184.89h81.7v-81.7h-81.7v81.7ZM1211.26,184.89h81.7v-81.7h-81.7v81.7ZM1316.81,184.89h81.7v-81.7h-81.7v81.7ZM1316.81,81.7h81.7V0h-81.7v81.7Z"/>
+  <rect class="cls-1" x="998" y="311" width="594" height="123"/>
+  <rect class="cls-2" x="1092.8" y="390.65" width="41.2" height="41.2"/>
+  <rect class="cls-3" x="1101.6" y="399.37" width="23.6" height="23.75"/>
+  <rect class="cls-1" x="1538" y="288" width="27" height="23"/>
+  <rect class="cls-1" x="1672" y="237" width="54" height="63"/>
+  <rect class="cls-1" x="1672" y="300" width="32" height="16"/>
+  <rect class="cls-1" x="1726" y="252" width="25" height="25"/>
+  <rect class="cls-1" x="1569.5" y="178.5" width="54" height="63" transform="translate(1386.5 1806.5) rotate(-90)"/>
+  <rect class="cls-1" x="1620" y="213" width="32" height="16" transform="translate(1415 1857) rotate(-90)"/>
+  <rect class="cls-1" x="1580" y="158" width="25" height="25" transform="translate(1422 1763) rotate(-90)"/>
+  <rect class="cls-1" x="1590" y="330" width="27" height="23" transform="translate(1945 -1262) rotate(90)"/>
+  <rect class="cls-1" x="1565" y="237" width="107" height="91"/>
+  <polygon class="cls-1" points="1550.8 433.65 998.23 431.85 997.8 474.65 1039 474.65 1039 515.85 1079.93 515.62 1079.8 555.65 1162 555.65 1162 596.85 1386.8 596.85 1386.8 555.65 1468.8 555.65 1468.8 515.65 1510.23 515.62 1509.8 474.65 1550.8 474.65 1550.8 433.65"/>
+  <image width="3152" height="2488" transform="translate(0 17) scale(.24)" xlink:href="../../../../../Downloads/docker-logos/PNG/docker-mark-blue.png"/>
+</svg>
