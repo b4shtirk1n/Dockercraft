@@ -8,15 +8,18 @@ export default function App() {
     <>
       <Header />
       <section>
-        <div className="intro-container">
-          <h1 className="title">Dockercraft</h1>
-          <p className="description">Docker image for minecraft </p>
+        <div className="home-container">
+          <div className="home-text">
+            <h1>Dockercraft</h1>
+            <p>Docker image for minecraft</p>
+          </div>
           <pre>
             <code className="bash">
               docker run -d -p 25565:25565 b4shtirk1n/minecraft-server
             </code>
             <a className="copy-btn">
-              <img src={copy}></img>
+              <img className="copy-btn-img" src={copy}></img>
+              <span className="tooltip">Копировать</span>
             </a>
           </pre>
         </div>

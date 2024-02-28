@@ -11,12 +11,13 @@ header {
   background: $color-accent;
   z-index: 10;
 
+  .home-btn {
+    width: 32px;
+  }
+
   div {
     display: flex;
     gap: 20px;
   }
 }
-
-.home-btn {
-  width: 32px;
-}
+ 
