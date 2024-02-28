@@ -26,7 +26,7 @@ FORGE_VER=forge version(default - 40.2.0)
 CLI
 
 ```sh
-docker run -d -p 25565:25565 b4shtirk1n/minecraft-server
+docker run -d -p 25565:25565 b4shtirk1n/dockercraft
 ```
 
 Compose
@@ -35,7 +35,7 @@ Compose
 version: "3.8"
 services:
   server:
-    image: b4shtirk1n/minecraft-server
+    image: b4shtirk1n/dockercraft
     restart: always
     tty: true
     stdin_open: true
