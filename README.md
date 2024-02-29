@@ -1,10 +1,12 @@
-<p align="left" width="100%">
-    <img width="33%" src="./dockercraft-web/src/assets/logo.svg">
+<h1 align="center">
+  <br>
+  <img src="./dockercraft-web/src/assets/logo.svg" width="200">
+  <br>
+  <b>Dockercraft</b>
+</h1>
+
+<p align="center">Docker image for minecraft server
 </p>
-
-# Dockercraft
-
-Docker image for minecraft server
 
 ## Featured
 
