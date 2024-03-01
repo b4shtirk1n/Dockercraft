@@ -1,6 +1,7 @@
-import { useSpring, animated } from "@react-spring/web";
-import { useState } from "react";
+import { animated, useSpring } from "@react-spring/web";
 import { OnCopy } from "../services/CopyService";
+import { useState } from "react";
+import ScrollImage from "./ScrollImage";
 import logo from "../assets/logo.svg";
 import copy from "../assets/copy.svg";
 import check from "../assets/check.svg";
@@ -43,7 +44,7 @@ export default function HomeSection() {
           </a>
         </pre>
       </div>
-      <img className="logo" src={logo} />
+      <ScrollImage className="logo" src={logo} />
     </section>
   );
 }
