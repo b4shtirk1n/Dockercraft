@@ -13,17 +13,11 @@
 ✖️ Vanilla  
 ✔️ Forge  
 ✖️ Mohist  
+✖️ Fabric  
 ✖️ Bedrock  
 ✖️ Environment for server properties
 
-## Environments
-
-```
-MC_VER=minecraft version(default - 1.18.2)
-FORGE_VER=forge version(default - 40.2.0)
-```
-
-## Example
+## Examples
 
 CLI
 
