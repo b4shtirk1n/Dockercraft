@@ -1,12 +1,14 @@
+import FeaturesSection from "../components/FeaturesSection";
 import Header from "../components/Header";
 import HomeSection from "../components/HomeSection";
-import "../styles/App.scss";
+import "../styles/Home.scss";
 
-export default function App() {
+export default function Home() {
   return (
     <div className="main">
       <Header />
       <HomeSection />
+      <FeaturesSection></FeaturesSection>
       <section></section>
     </div>
   );

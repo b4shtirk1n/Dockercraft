@@ -1,0 +1,6 @@
+@import "./mixin.scss";
+
+.features {
+  @include flex-center;
+  justify-content: right;
+}

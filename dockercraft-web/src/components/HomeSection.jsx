@@ -1,18 +1,18 @@
 import { animated, useSpring } from "@react-spring/web";
 import { OnCopy } from "../services/CopyService";
 import { useState } from "react";
-import ScrollImage from "./ScrollImage";
+import ScrollImage from "../widgets/ScrollImage";
 import logo from "../assets/logo.svg";
 import copy from "../assets/copy.svg";
 import check from "../assets/check.svg";
 import "../styles/HomeSection.scss";
 
 export default function HomeSection() {
-  const bashText = "docker run -d -p 25565:25565 b4shtirk1n/dockercraft";
+  const BASH_TEXT = "docker run -d -p 25565:25565 b4shtirk1n/dockercraft";
 
   const [showCopy, toggleShowCopy] = useState(false);
 
-  const opacity = useSpring({
+  const OPACITY_COPY = useSpring({
     opacity: showCopy ? 1 : 0,
     config: { duration: 120 },
   });
@@ -20,7 +20,7 @@ export default function HomeSection() {
   async function onCopyClick(e) {
     e.preventDefault();
     toggleShowCopy(true);
-    OnCopy(bashText);
+    OnCopy(BASH_TEXT);
     setTimeout(() => {
       toggleShowCopy(false);
     }, 1000);
@@ -32,11 +32,11 @@ export default function HomeSection() {
         <h1>Dockercraft</h1>
         <p>Docker image for minecraft</p>
         <pre>
-          <code className="bash">{bashText}</code>
+          <code className="bash">{BASH_TEXT}</code>
           <a className="copy-btn" onClick={onCopyClick}>
             <animated.img
               className="copy"
-              style={{ ...opacity }}
+              style={{ ...OPACITY_COPY }}
               src={check}
             ></animated.img>
             <img className="copy-btn-img" src={copy}></img>
