@@ -1,6 +1,13 @@
 server
 *.yaml
 
+bin
+*.cfg
+__pycache__
+.pytest_cache
+include
+lib
+
 logs
 *.log
 npm-debug.log*
