@@ -1,13 +1,33 @@
 #!/bin/sh
 
-cd /server
+function start {
+    case $TYPE in
+        VAINLLA | MOHIST | FABRIC)
+            java -jar installer.jar --nogui
+            ;;
+        *)
+            ./run.sh
+            ;;
+    esac
+}
 
-if [ -e installer.jar ]
+cd server/
+
+if [ -e !installer.jar ]
 then
-    ./run.sh
-else
-    wget -O installer.jar https://maven.minecraftforge.net/net/minecraftforge/forge/$MC_VER-$FORGE_VER/forge-$MC_VER-$FORGE_VER-installer.jar
-    java -jar installer.jar --installServer
+    if [ $URL == NULL ]
+    then
+        exho "Invalid env"
+        exit
+    fi
+    wget -O installer.jar $URL
+
+    if [ $TYPE == FORGE | FABRIC ]
+    then
+        java -jar installer.jar --installServer
+    fi
     echo "eula=true" > eula.txt
-    ./run.sh
+    start
+else
+    start
 fi
