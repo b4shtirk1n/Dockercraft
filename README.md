@@ -10,11 +10,13 @@
 
 ## Featured
 
-✖️ Vanilla  
+✔️ Vanilla  
 ✔️ Forge  
-✖️ Mohist  
-✖️ Fabric  
+✔️ NeoForge  
+✔️ Mohist  
+✔️ Fabric  
 ✖️ Bedrock  
+✖️ "LATEST" param for minecraft and server cores  
 ✖️ Environment for server properties
 
 ## Examples
