@@ -15,10 +15,10 @@ export default function ScrollImage({ className, src }) {
       className={className}
       style={{
         left: scrollYProgress.to(
-          (val) => `${val + 98 + -val * SECTION_COUNT * 100}%`
+          (val) => `${val + 98 + -val * SECTION_COUNT * 90}%`
         ),
         top: scrollYProgress.to(
-          (val) => `${val + 50 + val * SECTION_COUNT * 100}%`
+          (val) => `${val + 50 + val * SECTION_COUNT * 105}%`
         ),
       }}
       src={src}

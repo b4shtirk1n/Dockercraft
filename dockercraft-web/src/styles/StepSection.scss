@@ -1,0 +1,14 @@
+@import "mixin.scss";
+@import "var.scss";
+
+.step-section {
+  padding: 0 40px;
+  @include flex-center;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  gap: 20px;
+
+  a {
+    color: $color-primary;
+  }
+}

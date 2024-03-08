@@ -2,6 +2,7 @@ import { animated, useSpring } from "@react-spring/web";
 import { OnCopy } from "../services/CopyService";
 import { useState } from "react";
 import ScrollImage from "../widgets/ScrollImage";
+import ScrollInView from "../widgets/ScrollInView";
 import logo from "../assets/logo.svg";
 import copy from "../assets/copy.svg";
 import check from "../assets/check.svg";
@@ -28,22 +29,24 @@ export default function HomeSection() {
 
   return (
     <section className="home">
-      <div className="home-container">
-        <h1>Dockercraft</h1>
-        <p>Docker image for minecraft</p>
-        <pre>
-          <code className="bash">{BASH_TEXT}</code>
-          <a className="copy-btn" onClick={onCopyClick}>
-            <animated.img
-              className="copy"
-              style={{ ...OPACITY_COPY }}
-              src={check}
-            ></animated.img>
-            <img className="copy-btn-img" src={copy}></img>
-            <span className="tooltip">Copy</span>
-          </a>
-        </pre>
-      </div>
+      <ScrollInView>
+        <div className="home-container">
+          <h1>Dockercraft</h1>
+          <p>Docker image for minecraft</p>
+          <pre>
+            <code className="bash">{BASH_TEXT}</code>
+            <a className="copy-btn" onClick={onCopyClick}>
+              <animated.img
+                className="copy"
+                style={{ ...OPACITY_COPY }}
+                src={check}
+              ></animated.img>
+              <img className="copy-btn-img" src={copy}></img>
+              <span className="tooltip">Copy</span>
+            </a>
+          </pre>
+        </div>
+      </ScrollInView>
       <ScrollImage className="logo" src={logo} />
     </section>
   );

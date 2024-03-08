@@ -1,6 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900;&display=swap");
-@import "./var.scss";
-@import "./mixin.scss";
+@import "mixin.scss";
+@import "var.scss";
 
 *,
 ::before,
@@ -15,14 +15,14 @@
 
 body {
   background: $color-accent;
-}
 
-section {
-  width: 100%;
-  height: 100vh;
-  background: $color-bg;
-}
+  .main {
+    overflow-x: hidden;
 
-.main {
-  overflow: hidden;
+    section {
+      width: 100%;
+      height: 100vh;
+      background: $color-bg;
+    }
+  }
 }

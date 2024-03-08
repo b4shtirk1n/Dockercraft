@@ -1,0 +1,29 @@
+@import "mixin.scss";
+@import "var.scss";
+
+.step {
+  padding: 20px;
+  height: 300px;
+  width: 300px;
+  @include flex-center;
+  justify-content: space-evenly;
+  flex-direction: column;
+  text-align: center;
+  border: 1px solid $color-text;
+  border-radius: 8px;
+
+  .title {
+    height: 75px;
+    width: 75px;
+    font-size: 24px;
+    @include flex-center;
+    justify-content: center;
+    border-radius: 100%;
+    background: $color-primary;
+  }
+
+  p {
+    height: 58px;
+    font-size: 28px;
+  }
+}

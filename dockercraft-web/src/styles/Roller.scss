@@ -1,0 +1,30 @@
+@import "var.scss";
+
+.roller {
+  background: $color-bg;
+
+  &-content {
+    display: inline-block;
+    animation: roll 8s linear infinite;
+
+    span {
+      font-size: 4rem;
+      font-weight: 600;
+      padding: 0 20px;
+      transition: all 200ms;
+
+      &:hover {
+        color: $color-primary;
+      }
+    }
+  }
+}
+
+@keyframes roll {
+  from {
+    transform: translate(0);
+  }
+  to {
+    transform: translate(-50%);
+  }
+}

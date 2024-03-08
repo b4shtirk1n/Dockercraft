@@ -1,6 +1,52 @@
-@import "./mixin.scss";
+@import "mixin.scss";
+@import "var.scss";
 
 .features {
   @include flex-center;
   justify-content: right;
+
+  &-container {
+    padding: 0 40px;
+    text-align: right;
+
+    h1 {
+      font-size: 106px;
+      line-height: 10rem;
+    }
+
+    .slider {
+      height: 2.3rem;
+      font-size: 2rem;
+      display: flex;
+      overflow: hidden;
+
+      &-content {
+        position: relative;
+        animation: slide 8s infinite;
+
+        span {
+          padding: 0 10px;
+          background: $color-primary;
+        }
+      }
+    }
+  }
+}
+
+@keyframes slide {
+  0% {
+    top: 0;
+  }
+  25% {
+    top: -2.32rem;
+  }
+  50% {
+    top: -4.64rem;
+  }
+  75% {
+    top: -6.96rem;
+  }
+  100% {
+    top: 0;
+  }
 }
