@@ -40,4 +40,5 @@ def parse(url: str, find: str, find_last: str) -> str:
     last: int = r.find(find_last)+len(find_last)
     return r[index:last]
 
-os.environ["URL"] = get_url()
+if __name__ == "__main__":
+    os.environ["URL"] = get_url()
