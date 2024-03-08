@@ -2,11 +2,19 @@
 @import "var.scss";
 
 .step-section {
-  padding: 0 40px;
+  min-height: 100vh;
+  margin: auto;
+  padding: 40px;
   @include flex-center;
   justify-content: space-evenly;
   flex-wrap: wrap;
   gap: 20px;
+
+  @include breakpoint(mobile) {
+    padding: 80px 40px;
+    flex-direction: column;
+    gap: 40px;
+  }
 
   a {
     color: $color-primary;

@@ -2,3 +2,11 @@
   display: flex;
   align-items: center;
 }
+
+@mixin breakpoint($res) {
+  @if ($res == mobile) {
+    @media (max-width: 1020px) {
+      @content;
+    }
+  }
+}

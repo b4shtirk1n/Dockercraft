@@ -2,6 +2,7 @@
 @import "var.scss";
 
 .features {
+  height: 100vh;
   @include flex-center;
   justify-content: right;
 
